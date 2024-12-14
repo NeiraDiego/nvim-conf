@@ -1,2 +1,2 @@
 # nvim-conf
-basado en https://github.com/bcampolo/nvim-starter-kit/tree/
+basado en https://github.com/bcampolo/nvim-starter-kit/
