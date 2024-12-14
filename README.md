@@ -23,7 +23,7 @@ mv ~/.cache/nvim{,.bak}
 ```
 cd ~/.config
 git clone https://github.com/NeiraDiego/nvim-conf
-mv neovim-conf neovim
+mv nvim-conf nvim
 mkdir ~/.fonts
 cp neovim/NerdFontsSymbolsOnly ~/.fonts/
 fc-cache -f -v
