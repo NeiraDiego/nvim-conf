@@ -25,6 +25,6 @@ cd ~/.config
 git clone https://github.com/NeiraDiego/nvim-conf
 mv nvim-conf nvim
 mkdir ~/.fonts
-cp neovim/NerdFontsSymbolsOnly ~/.fonts/
+cp -r nvim/NerdFontsSymbolsOnly ~/.fonts/
 fc-cache -f -v
 ```
