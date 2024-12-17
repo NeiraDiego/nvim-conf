@@ -1,6 +1,6 @@
 -- Theme/Colorscheme (uncomment section for whichever theme you prefer or use your own)
 -- Kanagawa Theme (Custom Palette)
-return {
+--[[return {
   -- https://github.com/rebelot/kanagawa.nvim
   'rebelot/kanagawa.nvim', -- You can replace this with your favorite colorscheme
   lazy = false, -- We want the colorscheme to load immediately when starting Neovim
@@ -70,22 +70,23 @@ return {
   config = function(_, opts)
     require('kanagawa').setup(opts) -- Replace this with your favorite colorscheme
     vim.cmd("colorscheme kanagawa") -- Replace this with your favorite colorscheme
-
+]]--
+  -- es necesario comentar a individualmente para no tener problemas con los signos ]]
     -- Custom diff colors
-    vim.cmd([[
-      autocmd VimEnter * hi DiffAdd guifg=#00FF00 guibg=#005500
-      autocmd VimEnter * hi DiffDelete guifg=#FF0000 guibg=#550000
-      autocmd VimEnter * hi DiffChange guifg=#CCCCCC guibg=#555555
-      autocmd VimEnter * hi DiffText guifg=#00FF00 guibg=#005500
-    ]])
-
-    -- Custom border colors
-    vim.cmd([[
-      autocmd ColorScheme * hi NormalFloat guifg=#F9E7C0 guibg=#1F1F1F
-      autocmd ColorScheme * hi FloatBorder guifg=#F9E7C0 guibg=#1F1F1F
-    ]])
-  end
-}
+--    vim.cmd([[
+--      autocmd VimEnter * hi DiffAdd guifg=#00FF00 guibg=#005500
+--      autocmd VimEnter * hi DiffDelete guifg=#FF0000 guibg=#550000
+--      autocmd VimEnter * hi DiffChange guifg=#CCCCCC guibg=#555555
+--      autocmd VimEnter * hi DiffText guifg=#00FF00 guibg=#005500
+--    ]])
+--
+--    -- Custom border colors
+--    vim.cmd([[
+--      autocmd ColorScheme * hi NormalFloat guifg=#F9E7C0 guibg=#1F1F1F
+--      autocmd ColorScheme * hi FloatBorder guifg=#F9E7C0 guibg=#1F1F1F
+--    ]])
+--  end
+--}
 
 -- Kanagawa Theme (Original)
 -- return {
@@ -125,22 +126,22 @@ return {
 -- }
 
 -- Catppuccin Theme
--- return {
---   -- https://github.com/catppuccin/nvim
---   'catppuccin/nvim',
---   name = "catppuccin", -- name is needed otherwise plugin shows up as "nvim" due to github URI
---   lazy = false, -- We want the colorscheme to load immediately when starting Neovim
---   priority = 1000, -- Load the colorscheme before other non-lazy-loaded plugins
---   opts = {
---   --   -- Replace this with your scheme-specific settings or remove to use the defaults
---     -- transparent = true,
---     flavour = "mocha", -- "latte, frappe, macchiato, mocha"
---   },
---   config = function(_, opts)
---     require('catppuccin').setup(opts) -- Replace this with your favorite colorscheme
---     vim.cmd("colorscheme catppuccin") -- Replace this with your favorite colorscheme
---   end
--- }
+ return {
+   -- https://github.com/catppuccin/nvim
+   'catppuccin/nvim',
+   name = "catppuccin", -- name is needed otherwise plugin shows up as "nvim" due to github URI
+   lazy = false, -- We want the colorscheme to load immediately when starting Neovim
+   priority = 1000, -- Load the colorscheme before other non-lazy-loaded plugins
+   opts = {
+   --   -- Replace this with your scheme-specific settings or remove to use the defaults
+     -- transparent = true,
+     flavour = "mocha", -- "latte, frappe, macchiato, mocha"
+    },
+   config = function(_, opts)
+     require('catppuccin').setup(opts) -- Replace this with your favorite colorscheme
+     vim.cmd("colorscheme catppuccin") -- Replace this with your favorite colorscheme
+   end
+ }
 
 -- Sonokai Theme
 -- return {
